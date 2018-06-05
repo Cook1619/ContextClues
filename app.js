@@ -7,7 +7,7 @@ for (var i = 0; i < 101; i++) {
     if (i === 100) {
         var h3text = document.createTextNode('Accusation ' + [i]);
     } else {
-        var h3text = document.createTextNode('Accusation ' + [i] + ', ');
+        h3text = document.createTextNode('Accusation ' + [i] + ', ');
     }
     var h3 = document.createElement('h3');
     h3.appendChild(h3text);
@@ -16,5 +16,5 @@ for (var i = 0; i < 101; i++) {
 }
 
 function alertIt() {
-    alert('clicked!');
+    alert(`I accuse ${friends[1]}, with the ${weapons[6]} in the ${locations[3]}!!`)
 }
