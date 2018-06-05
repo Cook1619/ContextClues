@@ -12,10 +12,9 @@ for (var i = 0; i < 101; i++) {
     var h3 = document.createElement('h3');
     h3.appendChild(h3text);
     document.body.appendChild(h3);
-    h3 = document.querySelector('h3');
-    h3.addEventListener("click", alert);
+    h3.addEventListener("click", alertIt);
 }
 
-function alert() {
+function alertIt() {
     alert('clicked!');
 }
